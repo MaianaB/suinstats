@@ -12,4 +12,4 @@ const porcoSchema = Schema({
     cio: String
 }, {collection : 'porco'});
 
-module.exports = mongoose.model('Porco', porcoSchema);
+module.exports = mongoose.model('porco', porcoSchema);
