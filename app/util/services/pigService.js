@@ -43,6 +43,9 @@ async function makeAnalytics(req, res){
         if(lessDay.length > 0) message += lessDayMessage;
         console.log(subject, message);
         SENDEMAIL.sendEmail(subject, message, res);
+    } else {
+        res.status(200);
+        res.text("Concluído!");
     }
 }
 
