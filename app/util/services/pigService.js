@@ -31,8 +31,8 @@ async function makeAnalytics(req, res){
         }
     }
 
-    let lessPigMessage = "Matriz(es) com menos de 6 filhotes no parto: "+lessPig+"\n";
-    let morePigMessage = "Matriz(es) com mais de 12 filhotes no parto: "+morePig+"\n";
+    let lessPigMessage = "Matriz(es) com menos de 6 filhotes no parto: "+lessPig+"\n\n";
+    let morePigMessage = "Matriz(es) com mais de 12 filhotes no parto: "+morePig+"\n\n";
     let lessDayMessage = "Matriz(es) com intervalo menor que 144 dias entre os partos: "+lessDay+"\n";
 
     if(lessPig.length > 0 || morePig.length > 0 || lessDay.length > 0){
